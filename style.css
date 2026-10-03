@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Helvetica';
+    /* font-style: normal;
+    font-weight: normal; */
+    src: url(Helvetica.woff);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #e9e6e7;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header a, div {
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    /* margin: 20px; */
+    font-family: "Helvetica";
+    font-size: 18px;
+}
+
+.header .hire {
+    margin-left: 28%;
+}
+
+.hire a {
+    border: 2px dotted gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.hero {
+    background-color: #e9e6e7;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-family: "Helvetica";
+    font-weight: 30;
+    font-size: 50px;
+}
+
+.intro {
+    padding-bottom: 5px;
+}
+
+.todo {
+    padding-top: 0;
+}
+
+.hero a {
+    margin-top: 150px;
+}
+
+iframe {
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    width: 100%;
+    max-width: 315px; /* Adjust width as needed */
+    aspect-ratio: 9 / 16;
+    margin: 0 auto;
+}
+
+.featured-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.featured-header::before,
+.featured-header::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #333;
+}
+
+.featured-header::before {
+    margin-right: 15px; /* Adds space between the left line and the text */
+}
+
+.featured-header::after {
+    margin-left: 15px; /* Adds space between the right line and the text */
+}
+
+.featured-header span {
+    font-size: 25px;
+}
+
+.showcase {
+    background-color: #ccc;
+}
+
+.reels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.experience {
+    background-color: #e9e6e7;
+}
+
+.section {
+    display: flex;
+    gap: 40px;
+    line-height: 35px;
+    align-items: flex-start; /* Keeps the right box from stretching vertically */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text {
+    line-height: 35px;
+    max-width: 1000px;
+    display: flex;
+    align-items:flex-start ;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.about {
+    background-color: #ccc;
+}
