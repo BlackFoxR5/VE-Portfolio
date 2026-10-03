@@ -132,3 +132,10 @@ iframe {
 .about {
     background-color: #ccc;
 }
+
+.footer { 
+    text-align: center;
+    padding-top: 100px;
+    font-size: 16px;
+    background-color: #e9e6e7;
+}
