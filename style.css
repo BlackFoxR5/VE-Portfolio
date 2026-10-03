@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
 .header {
     background-color: #e9e6e7;
     display: flex;
@@ -37,11 +41,12 @@
 
 .hero {
     background-color: #e9e6e7;
-    height: 600px;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .hero h1 {
@@ -138,4 +143,126 @@ iframe {
     padding-top: 100px;
     font-size: 16px;
     background-color: #e9e6e7;
+}
+
+/* added code for responsiveness */
+
+/* ---------- Tablet ---------- */
+@media (max-width: 900px) {
+    .header .hire {
+        margin-left: 10%;
+    }
+
+    .section {
+        gap: 24px;
+    }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+    .header a, div {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* Nav: links on the left, HIRE ME on the right, wrapping if needed */
+    .header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 12px;
+    }
+
+    .header .info a {
+        padding: 6px 0;
+    }
+
+    .header .hire {
+        margin-left: 0;
+    }
+
+    .hire a {
+        display: inline-block;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 480px;
+        padding: 0 16px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero a {
+        margin-top: 80px;
+    }
+
+    /* Section headings */
+    .featured-header span {
+        font-size: 20px;
+    }
+
+    .featured-header::before {
+        margin-right: 10px;
+    }
+
+    .featured-header::after {
+        margin-left: 10px;
+    }
+
+    /* Reels: one per row, centered */
+    .reels {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reels > div {
+        width: 100%;
+        max-width: 345px;
+        padding: 12px 15px;
+    }
+
+    iframe {
+        border-radius: 20px;
+    }
+
+    /* Experience: stack text and image */
+    .section {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        line-height: 28px;
+        padding: 12px;
+    }
+
+    .section .image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section .image img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    /* About */
+    .text {
+        line-height: 28px;
+        padding: 0 12px 12px;
+    }
+
+    /* Footer */
+    .footer {
+        padding-top: 50px;
+        font-size: 14px;
+    }
 }
