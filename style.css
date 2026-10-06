@@ -17,7 +17,7 @@ img {
 .header {
     background-color: #e9e6e7;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .header a, div {
@@ -29,9 +29,9 @@ img {
     font-size: 18px;
 }
 
-.header .hire {
+/* .header .hire {
     margin-left: 28%;
-}
+} */
 
 .hire a {
     border: 2px dotted gray;
@@ -67,13 +67,27 @@ img {
     margin-top: 150px;
 }
 
-iframe {
+.vert {
     /* border: 1px solid black; */
     border-radius: 30px;
     width: 100%;
     max-width: 315px; /* Adjust width as needed */
     aspect-ratio: 9 / 16;
     margin: 0 auto;
+}
+
+.horz {
+    border-radius: 30px;
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+}
+
+/* gives each horizontal video's wrapper a real width to fill */
+.long > div {
+    width: 100%;
+    max-width: 600px;
 }
 
 .featured-header {
@@ -106,6 +120,12 @@ iframe {
 }
 
 .reels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.long {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -231,7 +251,17 @@ iframe {
         padding: 12px 15px;
     }
 
-    iframe {
+    .long {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .long > div {
+        max-width: 420px;
+        padding: 12px 15px;
+    }
+
+    .vert, .horz {
         border-radius: 20px;
     }
 
